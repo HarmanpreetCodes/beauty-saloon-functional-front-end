@@ -1,0 +1,96 @@
+<!DOCTYPE html><html>
+    <head>
+       <title>Home-Page</title>
+       <link rel="stylesheet" type="text/css" href="home.css">
+       <link rel="stylesheet" type="text/css" href="page-2.css">
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,intital-scale=1.0">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="images/logocroped.jpg">
+            </div>
+            <div class="bars">
+                <a href="home.html">About</a>
+                <a href="treatment.html">Treatments</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+    <div class="page-1">
+            <img class="page-image-1" src="images/home-page-1.jpeg" alt="Face image of a model">
+        <div class="quote-page-1">
+            Love of beauty<br> is taste.<br> <span class="quote-part2">The creation of<br> beauty is art.<br></span>
+        </div>
+        <img src="images/2.webp"  class="page-image-2" alt="Background black ink lines">
+    </div>
+
+<div class="page-2">
+
+    <div class="about-section">
+        <hr width="3px" color="grey">
+        <img src="images/staff.webp" alt="image of staff working" class="staff-image">
+          <p class="about-heading">About Us</p>
+       <p class="about-paragraph">
+        Welcome to our eyebrow beauty business, where we specialize in enhancing your natural beauty through the art of eyebrows. Our expert team of skilled technicians is dedicated to crafting perfect arches that frame your face and bring out your best features. Whether you're looking for a bold and defined look or a subtle enhancement, we offer a range of eyebrow services tailored to your preferences. From precise shaping and sculpting to tinting and microblading, we have the expertise to create eyebrows that beautifully complement your unique style. With our attention to detail and commitment to customer satisfaction, we strive to provide a relaxing and enjoyable experience for each client. Step into our salon and let us transform your brows into stunning works of art that will leave you feeling confident and radiant. Trust us to shape your eyebrows and shape your confidence!
+       </p>
+       <hr width="3px" color="grey">
+    </div>
+
+    
+
+        <!--page 3-->
+    
+        <div class="section">
+          <h2>Our #1 Treatment</h2>
+          <img src="images/eyebrow.jpeg" alt="Eyebrow Treatment">
+          <p class="des-para" id="description">
+            At our beauty salon, we offer the most sought-after and highly effective eyebrow treatment, which we proudly consider our #1 treatment. This treatment is designed to enhance and transform your eyebrows, giving you the perfect arch and shape that complements your facial features.
+          </p>
+          <button onclick="changeDescription()">know more</button>
+        </div>
+    
+        <script>
+          function changeDescription() {
+            var description = document.getElementById("description");
+            description.innerHTML = "Our eyebrow treatment is known for its exceptional results and customer satisfaction. With our team of experts, you can achieve the eyebrows you've always desired. take a look at our treatments. 90% of our customers become regular and so should you.";
+          }
+        </script>
+      </div> 
+
+</div>
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p>Welcome to our eyebrow beauty business!</p>
+    </div>
+  </div>
+  
+  <script>
+
+var modal = document.getElementById("myModal");
+window.onload = function() {
+  modal.style.display = "block";
+};
+
+var span = document.getElementsByClassName("close")[0];
+
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
+
+
+    </body>
+</html>

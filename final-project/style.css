@@ -1,0 +1,243 @@
+*{
+    padding:0px;
+    margin:0px;
+    
+    
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:#D3D3D3;
+  color: #333;
+  width: fit-content;
+}
+
+
+
+
+nav {
+  background-color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom-style:outset;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+.bars a:hover{
+    color:red;
+}
+
+.logo img {
+  height: 100 px;
+  
+ 
+}
+
+.bars a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 10px;
+  font-weight:500px;
+}
+
+
+header {
+
+  padding: 40px;
+  text-align: center;
+  color:grey ;
+  text-shadow: 2px 2px black
+}
+h2{
+    margin-top:40px;
+    padding: 10px; 
+    margin:5px;  
+    
+    font-size:30px;
+    color:#63666A;
+    
+  text-shadow: 0.5px 1px #454545 ;
+}
+.firstclass{
+    display: flex;
+  background-color:#6F7378;
+  margin-left:0px;
+  margin-right:30px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  box-shadow: 5px 10px 30px black ;
+ 
+}
+.leftimage{
+   
+  width:40%;
+   
+    
+}
+.leftimage img
+     {
+        width: auto;
+        height: 304px;
+       vertical-align:bottom;
+      
+       border-top-right-radius: 150px;
+       border-bottom-right-radius: 150px;
+      }
+    
+.leftdescription{
+   width:60%;  font-family:Cursive;
+   margin: 20px 100px 0px 100px
+}
+h3{
+    text-align:center;
+    color:white;
+    font-family:Cursive;
+}
+.leftdescription p{
+    color:white;
+    margin-top:20px;
+    margin-bottom:10px;
+   
+}
+h4{
+     color:white;
+      font-family:Cursive;
+}
+
+
+.secondclass{
+    margin-top:30px;
+    display: flex;
+  background-color:#6F7378;
+  margin-left:30px;
+  margin-right:0px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+  margin-bottom:100px;
+  box-shadow: 5px 10px 30px black ;
+}.rightimage{
+   
+    width:40%;
+     
+      
+  }
+  .rightimage img
+       {
+          width: auto;
+          height: 304px;
+         vertical-align:bottom;
+        
+         border-top-left-radius: 150px;
+         border-bottom-left-radius: 150px;
+        }
+      
+  .rightdescription{
+     width:60%; 
+     margin: 20px 100px 0px 100px
+     
+  }
+  .rightdescription p{
+    color:white;
+    margin-top:20px;
+    margin-bottom:10px;
+    font-family:Cursive;
+}
+.container {
+    width: max-content;
+    height: max-content;
+  }
+  /* Lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+      .leftdescription{
+        margin:5%;
+      
+      }
+      .firstclass{
+        display:block;
+        margin:5%;
+      }
+      .secondclass{
+        display:block;
+      }
+
+   
+
+
+
+
+
+  }
+  @media (max-width: 601px) {
+    
+      .leftdescription{
+        margin:5%;
+      }
+      .firstclass{
+        display:block;
+      }
+      .secondclass{
+        display:block;
+      }
+  
+  }
+
+  .buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+  }
+
+  #darkModeToggle,
+  #scrollToTopBtn {
+    background-color: 	#5A5A5A;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  }
+  #darkModeToggle,
+  #scrollToTopBtn:hover {
+    background-color: black;
+  }
+
+  /* Add your regular (light mode) styles here */
+  
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+  color: #fff; /* Change to your desired color for headings in dark mode */
+} 
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+/* Add additional styles for dark mode here */
+
+  
